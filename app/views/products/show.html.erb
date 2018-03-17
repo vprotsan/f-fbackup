@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<% if @product.picture.present? %>
 <%= image_tag @product.picture.url(:thumb) %>
+<% end %>
 
 <p>
   <strong>Name:</strong>

@@ -41,7 +41,7 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
-    @product = Product.new(product_params)
+    #@product = Product.save(product_params)
 
     respond_to do |format|
       if @product.update(product_params)

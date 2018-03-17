@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 
   has_attached_file :picture, styles: { medium: "300x300>", thumb: "100x100>" }, validate_media_type: false
   validates_attachment :picture, content_type: { content_type: ["image/jpg", 'image/jpeg', 'image/png'] }
-  validates :picture, attachment_presence: true
+  #validates :picture, attachment_presence: true
   # validates_with AttachmentPresenceValidator, attributes: :picture
 
   def formatted_price
